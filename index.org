@@ -1,0 +1,112 @@
+#+OPTIONS: toc:nil
+
+
+
+
+#+BEGIN_HTML
+---
+layout: index
+title: 'Fan: metaprogramming for OCaml'
+---
+#+END_HTML
+
+* What's Fan?
+
+  [[https://github.com/bobzhang/Fan][Fan]] is a fully-featured compile-time metaprogramming system for OCaml. It's a
+  superset of [[http://caml.inria.fr/][OCaml]] with Lisp-like [[http://letoverlambda.com/][Macros]]. It shares the same run-time
+  with OCaml, its concrete syntax is basically the same as OCaml
+  except for some minor differences, as we will explain later.
+
+
+** Why metaprogramming for OCaml?
+
+   According to [[http://en.wikipedia.org/wiki/Metaprogramming][wikipedia]],
+
+   #+BEGIN_QUOTE
+   Metaprogramming is the writing of computer
+   programs that write or manipulate other programs (or themselves) as
+   their data.
+   #+END_QUOTE
+
+   Computer programmers value abstraction, and metaprogramming is one
+   of the most powerful abstractions, /i.e./ abstraction over
+   code. Decent metaprogramming system enables great programmers to
+   finish the same project in an astoundingly short piece of code
+   compared languages without metaprogramming. 
+
+   OCaml is a great language for hackers, it embodies the most
+   important features as a modern functional programming language:
+   algebraic data type, pattern match, dynamic binding and type
+   inference.
+
+   Compared with Haskell, it has a humble type system, however, the coolest
+   thing is simplicity, it's not too hard to get a general idea of the
+   whole technology stack of OCaml, and its compiler is very
+   hackable. My pruned OCaml compiler compiles in less than 10
+   seconds in a unicore. (Compile time is a very important factor
+   since the time of programmer is precious, in
+   some languages, it takes 10 seconds to compile a 'hello-world'
+   program :-()
+
+
+* Contributions
+  Before getting started, contributions are very welcome
+
+  Code repo:  https://github.com/bobzhang/Fan
+
+  Documentation repo:
+  
+* Get started
+
+  
+* Exploration
+* Metaprogramming systems which inspired Fan
+
+    - Camlp4
+
+    - Common Lisp
+    
+    - Template Haskell
+
+
+      
+* Recommended readings 
+   
+* COMMENT
+  By all means, master
+   the spirit  of metaprogramming would 
+
+  for example, function
+   is the most basic concept in nearly all programming languages,
+   
+  Metaprogramming enables the possiblity for
+   the  user to write least lines of code if they like. As a
+   programmer, [[http://threevirtues.com/][being lazy]] should always be appreciated, we will show
+   you some examples that metaprogramming can turn your tens lines of
+   code into thousands of lines of code, simply put, metaprogramming
+   is so invaluable that every practical programmer should master
+   such technology. 
+
+   That said, we need a macro system for your favorite programming
+   language.  [[http://www.sbcl.org/][Common Lisp]] has been the best language for
+   metaprogramming during the last decades.  However, as one of the
+   eldest languages, there are some serious design defects for this
+   language: first, it does not support separate compilation, there is
+   no clear bound between compile-time runtime and
+   
+   Hmm, a good question, it's simply because writing
+   boilerplate code is tedious and error prone, and 
+
+   Having programming in [[http://en.wikipedia.org/wiki/Common_Lisp][Common Lisp]] for years, I
+happened to find
+[F#](http://research.microsoft.com/en-us/projects/fsharp/) when I
+was doing an internship at Microsoft.  I was fascinated by the beauty
+of functional languages, for example, the algebraic data type combined
+with pattern match is superior to s-expression in some regards, and
+strongly typed languages with type inference does help, especially
+when you write large software and do the refactorization, a type
+system is the  best tool for refactorization. XD.
+
+   
+
+   
